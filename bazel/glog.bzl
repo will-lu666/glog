@@ -70,6 +70,8 @@ def glog_library(namespace='google', with_gflags=1, **kwargs):
             # For logging.cc.
             '-DHAVE_PREAD',
             '-DHAVE___ATTRIBUTE__',
+            # For syslog 
+            '-DHAVE_SYSLOG_H',
 
             # Include generated header files.
             '-I%s/glog_internal' % gendir,
